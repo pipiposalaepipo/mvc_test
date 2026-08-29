@@ -79,7 +79,6 @@ public class MainController {
             voteController.processVote("REJECT", this::refreshUI)
         );
 
-        // 4. ยกเลิกคำขอ
         view.getBtnCancelRequest().addActionListener(e -> {
             int selectedRow = view.getRequestTable().getSelectedRow();
             if (selectedRow == -1) {
